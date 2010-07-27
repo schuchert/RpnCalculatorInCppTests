@@ -3,6 +3,7 @@
 	<name>RpnCalculatorInCppTests</name>
 	<comment></comment>
 	<projects>
+		<project>RpnCalculatorInCpp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
