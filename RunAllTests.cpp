@@ -1,6 +1,5 @@
 #include <CppUTest/CommandLineTestRunner.h>
 
-int main() {
-	const char *args[] = { "", "-v" };
-	return CommandLineTestRunner::RunAllTests(2, args);
+int main(int argc, char **argv) {
+	return CommandLineTestRunner::RunAllTests(argc, argv);
 }
