@@ -5,15 +5,22 @@
 #include <CppUTest/TestHarness.h>
 
 TEST_GROUP(PushConstant) {
-	RpnStack values;
-	PushConstant op;
+	RpnStack *values;
+	PushConstant *op;
 
-	CppUTestGroupPushConstant() : op(42) {
+	void setup() {
+		values = new RpnStack;
+		op = new PushConstant(42);
+	}
+
+	void teardown() {
+		delete op;
+		delete values;
 	}
 };
 
 TEST(PushConstant, ValueOnTop) {
-	op.invoke(values);
+	op->invoke(*values);
 
-	LONGS_EQUAL(42, values.top());
+	LONGS_EQUAL(42, values->top());
 }
