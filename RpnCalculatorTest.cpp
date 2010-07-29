@@ -1,4 +1,4 @@
-#include "Rpncalculator.h"
+#include "RpnCalculator.h"
 
 #include "OperatorFactory.h"
 
