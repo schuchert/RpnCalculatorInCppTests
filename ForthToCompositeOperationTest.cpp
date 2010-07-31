@@ -1,4 +1,4 @@
-#include "ForthToNamedOperatorbuilder.h"
+#include "ForthToNamedOperatorBuilder.h"
 #include "OperatorFactory.h"
 #include "NamedOperator.h"
 #include "RpnStack.h"
